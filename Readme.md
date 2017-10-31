@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Денис Гайворонский](https://up.htmlacademy.ru/htmlcss/19/user/541843).
-* Наставник: [Александр Кошара].
+* Наставник: [Александр Кошара](https://htmlacademy.ru/profile/rednaxxxela).
 
 ---
 
