@@ -25,17 +25,45 @@
         <form class="filters-hotel">
           <h2>Инфраструктура:</h2>
           <p>
-           <input id="filters-hotel-infastructure" name="infrastructure-field" type="checkbox" checked>
-           <label for="id="filters-hotel-infastructure"">Бассейн</label>
-         </p>
+            <input id="filters-hotel-waterpool" name="waterpool-field" type="checkbox" checked>
+            <label for="filters-hotel-waterpool">Бассейн</label>
+          </p>
           <p>
-           <input id="filters-hotel-parking" name="parking-field" type="checkbox">
-           <label for="id="filters-hotel-parking>Парковка</label>
-         </p>
+            <input id="filters-hotel-parking" name="parking-field" type="checkbox">
+            <label for="filters-hotel-parking">Парковка</label>
+          </p>
           <p>
-           <input id="filters-hotel-wifi" name="wififield" type="checkbox">
-           <label for="id="filters-hotel-wifi>Парковка</label>
-         </p>                      
+            <input id="filters-hotel-wifi" name="wifi-field" type="checkbox">
+            <label for="filters-hotel-wifi">Wi-Fi</label>
+          </p>
+          <h2>Тип жилья:</h2>
+          <p>
+            <input id="filters-hotel-type" name="hotel-field" type="checkbox" checked>
+            <label for="filters-hotel-type">Гостиница</label>
+          </p>
+          <p>
+            <input id="filters-motel-type" name="motel-field" type="checkbox" checked>
+            <label id="filters-motel-type">Мотель</label>
+          </p>
+          <p>
+            <input id="filters-apartment-type" name="apartment-field" type="checkbox" checked>
+            <label for="filters-apartment-type">Апартаменты</label>   
+          </p>
+          <p>
+            Стоимость в сутки (Р):<br>
+            <label>
+              От
+            <input type="text" id="from-price" value="0" >
+            </label>
+            <label>
+              До
+            <input type="text" id="to-price" value="3000" >
+            </label>
+          </p>
+          <p>
+            <input type="range" name="price-range" min="0" max="3000" step="100">
+          </p>
+          <input class="button-show-results" type="submit" value="Показать">                           
         </form>  
       </section>
 
