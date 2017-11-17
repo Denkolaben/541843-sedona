@@ -128,10 +128,43 @@ a {
 	border: 2px solid #e5e5e5;
 }
 
+.main-footer {
+	background-color: #ffffff;
+}
 
+.social {
+	text-align: center;
+}
 
+.social {
+	list-style: none;
+}
 
+.social-button {
+    width: 46px;
+    height: 48px;
 
+	color: #ffffff;
+
+	background-color: #81b3d2;
+}
+
+.social-button:hover {
+	background-color: #669ec0;
+}
+
+.social-button:active {
+	background-color: #5496bd;
+}
+
+.social-button:active svg {
+	fill: #88b6d1;
+}
+
+.academy-link {
+	width: 115px;
+	height: 41px;
+}
 
 
 
