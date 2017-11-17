@@ -84,10 +84,32 @@ a {
 	color: #000000;
 }
 
+.site-navigation .current-link a {
+	color: #766357;
+}
+
 .site-navigation a:hover,
 .site-navigation a:focus {
 	color: #c4dcea;
 }
+
+.catalog-item a {
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 26px;	
+	color: #000000;
+}
+
+.catalog-item a:hover,
+.catalog-item a:focus {
+	color: #c4dcea;
+}
+
+.catalog-item a:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+
 
 .about {
 	text-align: center;
@@ -162,10 +184,17 @@ a {
 }
 
 .academy-link {
+	display: block;
 	width: 115px;
 	height: 41px;
 }
 
+.filters {
+	color: #ffffff;
+	
+	background-image: url("../img/filter-hotels-background.jpg");
+	background-repeat: no-repeat;
+}
 
 
 
