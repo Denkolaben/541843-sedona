@@ -16,6 +16,15 @@ a {
 	text-decoration: none;
 }
 
+.intro-text,
+.hashtag {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    text-align: center;
+	text-transform: uppercase;
+}
+
 .button-type1 {
 	font: inherit;
 
@@ -67,6 +76,20 @@ a {
 	display: none;
 }
 
+.intro {
+    width: 1200px;
+    height: 773px;     	
+
+    background-image: url("../img/BackgroundPhoto.jpg");
+}
+
+.intro::after {
+    width: 1200px;
+    height: 57px;
+
+	background-image: url("../img/MaskBackground.png") no-repeat;
+}
+
 .main-navigation {
 	font-size: 14px;
 	line-height: 26px;
@@ -76,7 +99,8 @@ a {
 	background-color: #ffffff;
 }
 
-.site-navigation {
+.site-navigation,
+.catalog li {
 	list-style: none;
 }
 
@@ -84,13 +108,17 @@ a {
 	color: #000000;
 }
 
-.site-navigation .current-link a {
+.main-navigation .current-link {
 	color: #766357;
 }
 
 .site-navigation a:hover,
 .site-navigation a:focus {
 	color: #c4dcea;
+}
+
+.site-navigation a:active {
+	color: rgba(0, 0, 0, 0.3);
 }
 
 .catalog-item a {
@@ -163,15 +191,18 @@ a {
 }
 
 .social-button {
-    width: 46px;
-    height: 48px;
 
 	color: #ffffff;
 
 	background-color: #81b3d2;
 }
 
-.social-button:hover {
+.social-button svg {
+	fill: #ffffff;
+}
+
+.social-button:hover,
+.social-button:focus {
 	background-color: #669ec0;
 }
 
@@ -189,13 +220,78 @@ a {
 	height: 41px;
 }
 
+.academy-link svg {
+	fill: #000000;
+}
+
+.academy-link:hover svg,
+.academy-link:focus svg {
+	fill: #81b3d2;
+}
+
+.academy-link:active svg {
+	fill: rgba(0, 0, 0, 0.3);
+}
+
+
 .filters {
 	color: #ffffff;
-	
+
+	background-color: #333333;
 	background-image: url("../img/filter-hotels-background.jpg");
 	background-repeat: no-repeat;
 }
 
+.found-inscription {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+	text-transform: uppercase;
+}
 
+.sorting-inscription {
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.sorting-active {
+	color: #81b3d2;
+}
+
+.sorting-unactive {
+	color: rgba(0, 0, 0, 0.3);
+	border-bottom: dotted 1px rgba(0, 0, 0, 0.3);
+}
+
+.sorting-unactive:hover,
+.sorting-unactive:focus {
+	color: #81b3d2;
+	border-bottom: dotted 1px #81b3d2;
+}
+
+.sorting-unactive:active {
+	color: #000000;
+	border-bottom: none;
+}
+
+.least-most svg {
+	fill: #81b3d2;
+}
+
+.most-least svg {
+	fill: #cacaca;
+}
+
+.least-most:hover svg,
+.most-least:hover svg {
+	fill: #000000;
+}
+
+.least-most:active svg,
+.most-least:active svg {
+	fill: #81b3d2;
+}
 
 
