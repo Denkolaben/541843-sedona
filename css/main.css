@@ -24,7 +24,7 @@ a {
     text-align: center;
 }
 
-.button-type1 {
+.catalog-item .button-type1 {
 	font: inherit;
 
 	text-align: center;
@@ -35,19 +35,19 @@ a {
 	border: none;
 }
 
-.button-type1:hover,
-.button-type1:focus {
+.catalog-item .button-type1:hover,
+.catalog-item .button-type1:focus {
 	background-color: #604e43;
 }
 
-.button-type1:active {
+.catalog-item .button-type1:active {
     color: rgba(255, 255, 255, 0.302);
 
 	background-color: #503e33;
 }
 
 
-.button-type2 {
+.catalog-item .button-type2 {
 	font: inherit;
 
 	text-align: center;
@@ -58,12 +58,12 @@ a {
 	border: none;
 }
 
-.button-type2:hover,
-.button-type2:focus {
+.catalog-item .button-type2:hover,
+.catalog-item .button-type2:focus {
 	background-color: #669ec0;
 }
 
-.button-type2:active {
+.catalog-item .button-type2:active {
     color: rgba(255, 255, 255, 0.302);
 
 	background-color: #5496bd;
