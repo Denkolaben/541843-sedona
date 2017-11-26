@@ -26,8 +26,7 @@ a {
 
 .catalog-item .button-type1,
 .hotel-search .button-type1,
-.catalog-hotels .button-type1
- {
+.catalog-hotels .button-type1 {
 	font: inherit;
 
 	text-align: center;
@@ -50,7 +49,7 @@ a {
 .catalog-item .button-type1:active,
 .hotel-search .button-type1:active,
 .catalog-hotels .button-type1:active {
-    color: rgba(255, 255, 255, 0.302);
+    color: rgba(255, 255, 255, 0.3);
 
 	background-color: #503e33;
 }
@@ -77,9 +76,32 @@ a {
 
 .catalog-item .button-type2:active
 .catalog-hotels .button-type2:active {
-    color: rgba(255, 255, 255, 0.302);
+    color: rgba(255, 255, 255, 0.3);
 
 	background-color: #5496bd;
+}
+
+.hotel-detail-book .button-type2 {
+	display: inline-block;
+
+	width: 110px;
+	height: 27px;
+
+	padding-top: 4px;
+
+	box-sizing: border-box;
+}
+
+.hotel-detail-book .button-type1 {
+	display: inline-block;
+
+	width: 142px;
+	height: 27px;
+
+
+	padding-top: 4px;
+
+	box-sizing: border-box;
 }
 
 .visually-hidden {
@@ -168,7 +190,8 @@ a {
 }
 
 .visually-hidden {
-	display: inline;
+	display: inline-block;
+	font-size: 0;
 }
 
 .intro {
@@ -179,6 +202,7 @@ a {
     height: 773px;     	
 
     background-image: url("../img/BackgroundPhoto.jpg");
+    background-color: #715a58;
 
     box-sizing: border-box;
 }
@@ -426,12 +450,18 @@ a {
 	background-color: #333333;
 	background-image: url("../img/filter-hotels-background.jpg");
 	background-repeat: no-repeat;
+
+	width: 1200px;
+
+	box-sizing: border-box;
 }
 
 .catalog {
 	display: flex;
     justify-content: space-around;
 	align-items: baseline;
+
+	width: 1200px;
 }
 
 .catalog-hotels {
@@ -440,18 +470,38 @@ a {
 
 .hotel-wrap {
 	display: flex;
+	justify-content: space-between;
 
 	width: 1200px;
-	border-top: 1px solid;
+	border-top: 1px solid #e5e5e5;
+
+	padding: 30px 70px 30px 70px;
+	box-sizing: border-box;
 }
 
 .hotel-info-wrap {
 	display: flex;
-	flex-wrap: wrap;
+	justify-content: space-between;
 
-
-	width: 210px;
+	width: 425px;
 }
+
+.hotel-detail-book-wrap {
+	display: flex;
+    flex-direction: column;
+
+	width: 260px;
+}
+
+.hotel-rating {
+	display: flex;
+	flex-direction: column;
+}
+
+.catalog-hotels:last-child {
+	border-bottom: 1px solid #e5e5e5;
+}
+
 
 .sorting-range {
 	display: flex;
