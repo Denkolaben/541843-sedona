@@ -8,13 +8,14 @@
     <link href="css/main.css" rel="stylesheet">
   </head>
   <body>
+    <div class="wrap-content">
 
     <header class="main-header">
       <nav class="main-navigation">
-      	<ul class="site-navigation">
-      	  <li><a href="info.html">Информация</a></li>
-      	  <li><a href="photosvideos.html">Фото и видео</a></li>
-      	  <li><a href="map.html">Карта штата</a></li>
+      	 <ul class="site-navigation">
+      	  <li><a href="#">Информация</a></li>
+      	  <li><a href="#">Фото и видео</a></li>
+      	  <li><a href="#">Карта штата</a></li>
       	  <li><a class="current-link" href="hotels.html">Гостиницы</a></li>
       	</ul>
         <a href="index.html" class="logo"><img src="img/logo.png" width="137" height="70" alt="Логотип города Седона"></a>
@@ -27,49 +28,60 @@
         <h1 class="visually-hidden">Подбор отеля</h1>
         <h2 class="visually-hidden">Фильтр отелей</h2>
         <form class="filters-hotel" action="https://echo.htmlacademy.ru" method="post">
-          <h2>Инфраструктура:</h2>
-          <p>
-            <input class="checkbox" id="filters-waterpool" name="waterpool-field" type="checkbox" checked>
-            <label for="filters-waterpool">Бассейн</label>
-          </p>
-          <p>
-            <input id="filters-hotel-parking" name="parking-field" type="checkbox">
-            <label for="filters-hotel-parking">Парковка</label>
-          </p>
-          <p>
-            <input id="filters-wifi" name="wifi-field" type="checkbox">
-            <label for="filters-wifi">Wi-Fi</label>
-          </p>
-          <h2>Тип жилья:</h2>
-          <p>
-            <input id="filters-hotel-type" name="hotel-field" type="checkbox" checked>
-            <label for="filters-hotel-type">Гостиница</label>
-          </p>
-          <p>
-            <input id="filters-motel-type" name="motel-field" type="checkbox" checked>
-            <label for="filters-motel-type">Мотель</label>
-          </p>
-          <p>
-            <input id="filters-apartment-type" name="apartment-field" type="checkbox" checked>
-            <label for="filters-apartment-type">Апартаменты</label>   
-          </p>
-          <p>
+          <div class="checkbox-wrap">
+            <div class="infastructure-form">
+              <h2>Инфраструктура:</h2>
+              <p>
+                <input class="checkbox" id="filters-waterpool" name="waterpool-field" type="checkbox" checked>
+                <label for="filters-waterpool">Бассейн</label>
+              </p>
+              <p>
+                <input id="filters-hotel-parking" name="parking-field" type="checkbox">
+                <label for="filters-hotel-parking">Парковка</label>
+              </p>
+              <p>
+                <input id="filters-wifi" name="wifi-field" type="checkbox">
+                <label for="filters-wifi">Wi-Fi</label>
+              </p>
+            </div>
+         <div class="hotel-type-form">
+            <h2>Тип жилья:</h2>
+            <p>
+              <input id="filters-hotel-type" name="hotel-field" type="checkbox" checked>
+              <label for="filters-hotel-type">Гостиница</label>
+            </p>
+            <p>
+              <input id="filters-motel-type" name="motel-field" type="checkbox" checked>
+              <label for="filters-motel-type">Мотель</label>
+            </p>
+            <p>
+              <input id="filters-apartment-type" name="apartment-field" type="checkbox" checked>
+              <label for="filters-apartment-type">Апартаменты</label>   
+            </p>
+            <p>
+          </div>
+        </div>
+          <div class="price-form">
             <h2>Стоимость в сутки (Р):</h2>
-            <label>
-              От
-            <input type="text" id="from-price" value="0" >
-            </label>
-            <label>
-              До
-            <input type="text" id="to-price" value="3000" >
-            </label>
-          </p>
-          <p>
-            <!-- Объяснят позже как сверстать это на дивах
-            <input type="range" name="price-range" min="0" max="3000" step="100">
-            -->
-          </p>
-          <input class="button-show-results" type="submit" value="Показать">                           
+            <div class="price-controls">
+              <label class="min-price">от <input type="text" name="min-price" value="0">
+              </label>
+              
+              <label class="max-price">от <input type="text" name="max-price" value="3000">
+              </label>              
+
+            </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+
+            </div>  
+
+          <input class="button-show-results" type="submit" value="Показать">
+          </div>                           
         </form>  
       </section>
 
@@ -84,17 +96,14 @@
          <li><a href="raiting.html" class="sorting-unactive">По рейтингу</a></li>
         </ul>
 
-        <span class="least-most">
-          <a href="#">
+        <div class="most-least-range">
+          <a class="most-least-sort" href="#">
             <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#" d="M5.5 0L0 10h11z"/></svg>
           </a>
-        </span>
-
-        <span class="most-least">
-          <a href="#">
+          <a class="least-most-sort" href="#">
           <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#2" d="M5.5 10L0 0h11"/></svg>  
           </a>
-        </span>
+        </div>
       </section>
       
       <section class="catalog-hotels">  
@@ -189,8 +198,8 @@
 
       </section>
     </main>  
-
-    <footer class="main-footer">
+    
+    <footer class="main-footer inner-footer">
       <p class="hashtag">#VISITSEDONA</p>
 
       <ul class="social">
@@ -221,6 +230,7 @@
       </a>
       </p>
 
-    </footer>
+  </section>
+</div>
   </body>  
 </html>
