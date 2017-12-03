@@ -33,14 +33,14 @@ a {
 
 .intro-header {
 	display: block;
-	width: 430px;
+	width: 470px;
 	margin-top: 60px;
-	margin-left: 380px;
+	margin-left: 362px;
 }
 
 .reasons-text {
-    margin-top: 37px;
-	margin-bottom: 60px;
+    margin-top: 28px;
+	margin-bottom: 55px;
 }
 
 .catalog-item .button-type1,
@@ -133,16 +133,16 @@ a {
 	
     margin: 0;
 	padding-top: 15px;
-	padding-right: 6%;
+	padding-right: 70px;
 	padding-bottom: 15px;
-	padding-left: 6%;
+	padding-left: 70px;
 
 	background-color: #ffffff; 
 }
 
 .site-navigation li {
 
-	width: 20%;
+	width: 240px;
 	text-align: left;
 }
 
@@ -150,6 +150,15 @@ a {
 .site-navigation li:nth-child(4) {
 
 	text-align: right;
+}
+
+.site-navigation li:nth-child(2) {
+	padding-left: 80px;
+	margin-right: 90px;
+}
+
+.site-navigation li:nth-child(3) {
+	padding-right: 4px;
 }
 
 .logo {
@@ -167,6 +176,10 @@ a {
 	color: #000000;
 
 	background-color: #ffffff;
+}
+
+.site-navigation li:nth-child(2) {
+	margin-left: -80px;
 }
 
 .site-navigation,
@@ -232,8 +245,8 @@ a {
 	display: block;
 	position: relative;
 
-	height: 432px;
-	padding-top: 76px;
+	height: 431px;
+	padding-top: 77px;
 
 	margin-top: 0px;
      	
@@ -248,7 +261,7 @@ a {
 .intro img {
 
 	display: block;
-	
+
 	margin: auto auto;
 
 }
@@ -277,13 +290,14 @@ a {
 .about h3 {
 	font-size: 21px;
 	line-height: 21px;
+
+	padding-top: 10px;
 }
 
 .reason-item h3 {
 
 	width: 166px;
 }
-
 
 .reason {
 	list-style: none;
@@ -293,7 +307,7 @@ a {
 
 	display: flex;
 
-	line-height: 26px;
+	line-height: 21px;
 
 	background-color: #81b3d2;
 	color: #ffffff;
@@ -301,33 +315,53 @@ a {
 }
 
 .photo-wrap {
+	position: relative;
+	width: 800px;
 	height: 256px;
 	overflow: hidden;
+}
+
+.photo-wrap img {
+	position: absolute;
+	left: 0;
+	top: -80px;
 }
 
 .reason-item {
 	
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 
 	width: 400px;
+	padding: 30px;
+
+	box-sizing: border-box;
+}
+
+.reason-item.reason-devil {
+	padding-top: 15px;
 }
 
 .reason-item p {
-	width: 254px;
+	width: 305px;
+	padding-top: 8px;
+	padding-right: 2px;
 }
 
+.reason-city .reason-name {
+	padding-top: 0;
+}
 
 .reason {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	margin: 0px;
-	padding-top: 57px;
+	padding-top: 60px;
 	padding-left: 0;
-	padding-bottom: 85px;   
+	padding-bottom: 80px;   
 }
 
 .reason-advice {
@@ -342,6 +376,8 @@ a {
     
     margin: 0;
 	width: 288px;
+
+	padding-top: 3px;
 }
 
 
@@ -350,9 +386,13 @@ a {
 	background-color: #eeeeee;
 }
 
+.reason-ordinary {
+	box-sizing: border-box;
+}
+
 .ordinary-reason .reason {
-	padding-top: 50px;
-	padding-bottom: 65px;
+	padding-top: 40px;
+	padding-bottom: 45px;
 }
 
 .ordinary-reason h3 {
@@ -363,6 +403,8 @@ a {
 
 .ordinary-reason p {
 	width: 263px;
+	padding-top: 7px;
+	padding-right: 7px;
 }
 
 .hotel-search {
@@ -374,7 +416,7 @@ a {
 
 .hotel-search b {
 
-	margin-top: 56px;
+	margin-top: 54px;
 
     font-size: 30px;
 	line-height: 36px;
@@ -386,8 +428,10 @@ a {
 	white-space: pre;
 	text-align: center;
 
-	margin-top: 37px;
-	margin-bottom: 55px;
+	line-height: 24px;
+
+	margin-top: 20px;
+	margin-bottom: 50px;
 }
 
 .hotel-search .button-type1 {
@@ -397,7 +441,7 @@ a {
 	padding-bottom: 30px;
 
 	width: 568px;
-	height: 86px;
+	height: 85px;
 
 	font-size: 21px;
 	line-height: 26px; 
@@ -430,21 +474,24 @@ a {
 .hotel-search-date-out {
 	display: block;
 	position: relative;
+
+	margin-bottom: 0;
 }
 
 .hotel-search-date-in {
 	margin-top: 0;
+	margin-bottom: 0;
 }
 
 .hotel-date[type="text"] {
-	width: 281px;
-	margin-bottom: 20px;
+	width: 290px;
+	margin-bottom: 15px;
     margin-left: 20px;
     
     padding-top: 6.5px;
     padding-right: 40px;
     padding-bottom: 6.5px;
-    padding-left: 15px;
+    padding-left: 10px;
 
     border: 2px solid #f2f2f2;
 
@@ -472,8 +519,8 @@ a {
 
 .calendar-icon {
 	position: absolute;
-	right: 15px;
-	margin-top: 5px;
+	right: 9px;
+	margin-top: -45px;
     
 	fill: #cacaca;
 }
@@ -490,22 +537,24 @@ a {
 .hotel-search-adults {
 	display: inline-block;
 	position: relative;
+
+	margin-top: 0;
 }
 
 
 .hotel-search-kids {
 	display: inline-block;
 	position: relative;
-	margin-left: 40px;
+	margin-left: 50px;
 }
 
 .hotel-search-kids .hotel-amount[type="text"] {
-	margin-left: 20px;
+	margin-left: 25px;
 }
 
 .hotel-amount[type="text"] {
 
-    width: 40px;
+    width: 35px;
 	margin-bottom: 20px;
     margin-left: 20px;
     
@@ -615,9 +664,10 @@ a {
 	display: block;
 	width: 458px;
 
-	margin-top: 40px;
+	margin-top: 20px;
 	padding-top: 17px;
-	padding-bottom: 22px;
+	padding-bottom: 16px;
+	padding-left: 5px;
 
 	font-size: 21px;
 	font-weight: 700;
@@ -645,6 +695,9 @@ a {
 	justify-content: space-around;
 	width: 100%;
 	position: absolute;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	padding-left: 10px;
 	bottom: 0;
 	background-color: rgba(255, 255, 255, 0.9);
 }
@@ -654,12 +707,20 @@ a {
 
 }
 
+.hashtag {
+    margin-top: 25px; 
+	margin-bottom: 0px;
+	padding-left: 12px;
+}
+
 .social {
 	display: flex;
 	justify-content: space-between;
 	width: 150px;
 
-	padding-left: 0;
+	padding-bottom: 20px;
+	margin-right: 10px;
+
 }
 
 .twitter-button,
@@ -686,11 +747,13 @@ a {
 .footer-copyright {
 	display: flex;
 	justify-content: space-between;
+	margin-top: 0;
+	margin-bottom: 20px;
 }
 
 .websiteby {
 	align-self: center;
-	margin-right: 5px;
+	margin-right: 10px;
 }
 
 .social {
@@ -729,6 +792,8 @@ a {
 	display: block;
 	width: 115px;
 	height: 41px;
+
+	align-self: center;
 }
 
 .academy-link svg {
@@ -754,7 +819,14 @@ a {
 
 	width: 1200px;
 
+	padding-top: 15px;
+
 	box-sizing: border-box;
+}
+
+.filters h2 {
+	font-size: 16px;
+	margin-left: 3px;
 }
 
 .filters-hotel {
@@ -767,12 +839,26 @@ a {
 	justify-content: space-around;
 
 	width: 465px;
-	padding-left: 57px;
+	padding-left: 32px;
+}
+
+.hotel-type-form {
+	margin-left: 40px;
+}
+
+.filters p {
+	margin-top: 22px;
+	margin-bottom: 25px;
+	text-align: left;
 }
 
 .price-form {
-	padding-right: 85px;
+	padding-right: 75px;
 	margin-bottom: 33px;
+}
+
+.price-form h2 {
+	margin-bottom: 7px;
 }
 
 .filters-hotel input[type="checkbox"] {
@@ -793,10 +879,10 @@ a {
     top: 0;
     left: 0;
     
-    width: 10px;
-    height: 10px;
+    width: 24px;
+    height: 24px;
 
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .filters-hotel input[type="checkbox"]:checked + label::before {
@@ -901,8 +987,8 @@ a {
 
 .button-show-results {
 	display: block;
-	margin: 0 auto;
-	padding: 6px 35px;
+	margin-left: 80px;
+	padding: 6px 30px;
 
 	font-size: 14px;
 	line-height: 20px;
@@ -923,10 +1009,43 @@ a {
 
 .catalog {
 	display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+	align-items: flex-start;
+	position: relative;
+
+	padding-left: 70px;
+	padding-right: 70px;
+	padding-top: 30px;
+	padding-bottom: 7px;
+
+}
+
+.sorting-wrap {
+	display: flex;
+	justify-content: space-between;
 	align-items: baseline;
 
-	width: 1200px;
+	position: absolute;
+	left: 235px;
+	bottom: 16px;
+
+	font-size: 12px;
+}
+
+
+.sorting-inscription {
+	display: inline-block;
+	width: 115px;
+}
+
+.most-least-range {
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	right: 75px;
+	top: 33px;
+
+	width: 35px;
 }
 
 .catalog-hotels {
@@ -956,11 +1075,48 @@ a {
     flex-direction: column;
 
 	width: 260px;
+	box-sizing: border-box;
+}
+
+.hotel-name {
+}
+
+.hotel-price {
+	display: flex;
+	justify-content: space-between;
+	width: 182px;
+}
+
+.hotel-detail-book {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 15px;
 }
 
 .hotel-rating {
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.rating-star {
+	display: flex;
+	justify-content: space-between;
+	width: 89px;
+}
+
+.rating-star.three-stars {
+	width: 65px;
+}
+
+.rating-star.two-stars {
+	width: 41px;
+}
+
+.rating-number {
+	background-color: #f2f2f2;
+	padding: 2px 15px 2px 15px;
 }
 
 .catalog-hotels:last-child {
@@ -972,7 +1128,8 @@ a {
 	display: flex;
 	justify-content: space-between;
 
-	width: 250px;
+	width: 235px;
+	margin-top: 0;
 	padding-left: 0;
 	box-sizing: border-box;
 }
@@ -981,6 +1138,7 @@ a {
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
+    margin-top: 0px;
 }
 
 .sorting-inscription {
