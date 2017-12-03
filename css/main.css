@@ -585,7 +585,7 @@ a {
 .calendar-icon {
 	position: absolute;
 	right: 9px;
-	margin-top: -45px;
+	top: 8px;
     
 	fill: #cacaca;
 }
