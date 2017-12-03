@@ -9,6 +9,11 @@ body {
 	color: #000000;
 	text-transform: uppercase;
 
+	background-color: #f2f2f2;
+}
+
+.container,
+.hotel-search {
 	background-color: #ffffff;
 }
 
