@@ -94,11 +94,12 @@ a {
 	background-color: #669ec0;
 }
 
-.catalog-item .button-type2:active
+.catalog-item .button-type2:active,
 .catalog-hotels .button-type2:active {
-    color: rgba(255, 255, 255, 0.3);
+	color: rgba(255, 255, 255, 0.3);
 
 	background-color: #5496bd;
+
 }
 
 .hotel-detail-book .button-type2 {
@@ -235,6 +236,15 @@ a {
 	font-weight: 700;
 	line-height: 26px;	
 	color: #000000;
+}
+
+.catalog-hotels a:hover,
+.catalog-hotels a:focus {
+	color: #81b3d2;
+}
+
+.catalog-hotels a:active {
+	color: #cacaca;
 }
 
 .catalog-item a:hover,
@@ -762,6 +772,8 @@ a {
 	padding-left: 10px;
 	bottom: 0;
 	background-color: rgba(255, 255, 255, 0.9);
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 .main-footer.inner-footer {
@@ -957,7 +969,8 @@ a {
 }
 
 .filters-hotel input[type="checkbox"] + label::before {
-    content: "\2610";
+    
+    content: url("../img/checkbox-off.svg");
 
     position: absolute;
     top: 0;
@@ -970,7 +983,7 @@ a {
 }
 
 .filters-hotel input[type="checkbox"]:checked + label::before {
-    content: "\2611";
+    content: url("../img/checkbox-on.svg");
 }
 
 .price-controls {
@@ -1061,6 +1074,10 @@ a {
 }
 
 .range-toggle:hover {
+
+    width: 4.4px;
+    height: 3.4px;
+
 	background: #1c4f80;
 }
 
