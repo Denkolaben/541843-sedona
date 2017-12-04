@@ -69,6 +69,7 @@ a {
 .catalog-hotels .button-type1:hover,
 .catalog-hotels .button-type1:focus {
 	background-color: #604e43;
+	color: #ffffff;
 }
 
 .catalog-item .button-type1:active,
@@ -97,6 +98,8 @@ a {
 .catalog-hotels .button-type2:focus,
 .catalog-hotels .button-type2:hover {
 	background-color: #669ec0;
+
+	color: #ffffff;
 }
 
 .catalog-item .button-type2:active,
@@ -216,12 +219,12 @@ a {
 	color: #766357;
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus {
+.site-navigation a:not(.current-link):hover,
+.site-navigation a:not(.current-link):focus {
 	color: #c4dcea;
 }
 
-.site-navigation a:active {
+.site-navigation a:not(.current-link):active {
 	color: rgba(0, 0, 0, 0.3);
 }
 
@@ -542,6 +545,8 @@ a {
 
 .hotel-search-date-in,
 .hotel-search-date-out {
+    width: 459px;
+
 	display: block;
 	position: relative;
 
@@ -987,8 +992,27 @@ a {
     font-size: 40px;
 }
 
+.filters-hotel input[type="checkbox"][disabled] + label::before {
+
+	content: url("../img/checkbox-off-disabled.svg");
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    width: 24px;
+    height: 24px;
+
+    font-size: 40px;
+	
+}
+
 .filters-hotel input[type="checkbox"]:checked + label::before {
     content: url("../img/checkbox-on.svg");
+}
+
+.filters-hotel input[type="checkbox"][disabled]:checked + label::before {
+    content: url("../img/checkbox-on-disabled.svg");
 }
 
 .price-controls {
@@ -1338,14 +1362,15 @@ a {
 	fill: #cacaca;
 }
 
+.least-most-sort svg {
+	fill: #81b3d2;
+}
+
 .most-least-sort:hover svg,
-.most-least-sort:focus svg,
-.least-most-sort:hover svg,
-.least-most-sort:focus svg {
+.most-least-sort:focus svg {
 	fill: #231f20;
 }
 
-.most-least-sort:active svg,
-.least-most-sort:active svg {
+.most-least-sort:active svg {
 	fill: #81b3d2;
 }
