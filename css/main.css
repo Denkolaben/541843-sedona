@@ -774,7 +774,7 @@ a {
 
 	bottom: 0;
 
-	padding-top: 24px;
+	padding-top: 22px;
 	padding-bottom: 10px;
 	padding-left: 130px;
     padding-right: 101px;
@@ -1135,11 +1135,12 @@ a {
 }
 
 .button-show-results {
-	display: block;
-	margin-left: 82px;
-	padding: 6px 30px 6px 28px;
+	
+	margin-left: 84px;
+	padding: 6px 30px 6px 35px;
 
 	font-size: 14px;
+	font-family: inherit;
 	line-height: 21px;
 	color: #ffffff;
 	text-transform: uppercase;;
