@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
+    <link href="css/minmain.css" rel="stylesheet">
   </head>
   <body>
     <div class="wrap-content">
@@ -126,7 +126,7 @@
           </form>
         </div>
 
-        <img src="img/map.jpg" width="1200" height="593" alt="Карта Седоны">
+        <iframe width="1200" height="593" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Sedona%20USA%5D&key=AIzaSyDDg2xUCVD-Md0W1VfisxFvhDV4f2dMJs4" allowfullscreen></iframe>
 
         <footer class="main-footer">
           <div class="footer-wrap-content">
@@ -161,21 +161,7 @@
         </footer>
       </section>
     </div>
-    <script type="text/javascript">
-
-     var form = document.querySelector(".hotel-search-form");
-
-     var form_visible = document.querySelector(".form-visible")
-
-     form.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      form_visible.classList.toggle("form");
-      form_visible.classList.toggle("form-visible");
-     });
-
-      form_visible.classList.toggle("form-visible");
-      form_visible.classList.toggle("form");
-
+    <script src="js/minscript.js">
     </script>
   </body>
 </html>

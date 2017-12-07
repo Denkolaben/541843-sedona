@@ -500,6 +500,7 @@ a {
 .map {
     margin-top: 0;
     position: relative;
+    background-color: #9ACD32;
 }
 
 .form {
@@ -534,7 +535,74 @@ a {
     100% { -webkit-transform-origin: 0 0 0; transform-origin: 0 0 0;}
 }
 
+@-webkit-keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+
 .form-visible {
+    position: absolute;
+
+    top: 0px;
+    left: 316px;
+
+    width: 458px;
+    padding: 55px;
+
+    font-weight: 700;
+    font-size: 14px;
+    color: #000000;
+
+    background-color: #ffffff;
+
+}
+
+.form-visible-animation {
     position: absolute;
     -webkit-animation-name: bounce;
             animation-name: bounce;
@@ -552,7 +620,11 @@ a {
     color: #000000;
 
     background-color: #ffffff;
+}
 
+.form-error {
+    -webkit-animation: shake 0.6s;
+            animation: shake 0.6s;
 }
 
 .hotel-search-date-in,
@@ -982,9 +1054,9 @@ a {
     margin-bottom: 7px;
 }
 
-.filters-hotel input[type="checkbox"] {
-    display: none;
-}
+/*.filters-hotel input[type="checkbox"] {
+    outline: ;
+}*/
 
 .filters-hotel input[type="checkbox"] + label {
     display: block;
@@ -1006,6 +1078,10 @@ a {
     font-size: 40px;
 }
 
+.filters-hotel input:focus[type="checkbox"] + label::before {
+    outline: 2px solid #00BFFF;
+}
+
 .filters-hotel input[type="checkbox"][disabled] + label::before {
     content: url("../img/checkbox-off-disabled.svg");
 
@@ -1017,11 +1093,14 @@ a {
     height: 24px;
 
     font-size: 40px;
-
 }
 
 .filters-hotel input[type="checkbox"]:checked + label::before {
     content: url("../img/checkbox-on.svg");
+}
+
+.filters-hotel input:focus[type="checkbox"]:checked + label::before {
+    outline: 2px solid #00BFFF;
 }
 
 .filters-hotel input[type="checkbox"][disabled]:checked + label::before {
