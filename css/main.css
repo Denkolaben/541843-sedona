@@ -177,10 +177,7 @@ a {
 .logo {
     position: absolute;
     top: 0px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
+    margin-left: 533px;
     z-index: 2;
 }
 
@@ -500,7 +497,9 @@ a {
 .map {
     margin-top: 0;
     position: relative;
-    background-color: #9ACD32;
+    height: 599px;
+    background: url(../img/map-background.png) 100% 100% no-repeat;
+    background-color: #cbe6a3;
 }
 
 .form {
@@ -1155,6 +1154,7 @@ a {
 
 .price-controls input {
     width: 50px;
+    height: 15px;
     margin: 0;
 
     color: inherit;
