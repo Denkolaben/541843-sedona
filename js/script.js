@@ -8,16 +8,16 @@ form.addEventListener("click", function (evt) {
   evt.preventDefault();
   form_visible.classList.toggle("form");
   form_visible.classList.toggle("form-visible-animation");
- });
+});
 
 form_visible.addEventListener("submit", function (evt) {
   if (!start_date.value || !finish_date.value) {
-  evt.preventDefault ();
-  form_visible.classList.remove("form-error");
-  form_visible.offsetWidth = form_visible.offsetWidth;
-  form_visible.classList.add("form-error");
+    evt.preventDefault ();
+    form_visible.classList.remove("form-error");
+    form_visible.offsetWidth = form_visible.offsetWidth;
+    form_visible.classList.add("form-error");
   }
- });
+});
 
-  form_visible.classList.toggle("form-visible");
-  form_visible.classList.toggle("form");
+form_visible.classList.toggle("form-visible");
+form_visible.classList.toggle("form");
