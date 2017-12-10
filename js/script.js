@@ -12,7 +12,7 @@ form.addEventListener("click", function (evt) {
 
 form_visible.addEventListener("submit", function (evt) {
   if (!start_date.value || !finish_date.value) {
-    evt.preventDefault ();
+    evt.preventDefault();
     form_visible.classList.remove("form-error");
     form_visible.offsetWidth = form_visible.offsetWidth;
     form_visible.classList.add("form-error");
